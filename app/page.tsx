@@ -30,16 +30,6 @@ Turning plastic waste into sustainable innovation
 <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
   <div className="overflow-hidden rounded-xl shadow-lg">
     <Image
-      src="/1.jpg"
-      alt="Eco Filament 1"
-      width={400}
-      height={300}
-      className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
-      priority
-    />
-  </div>
-  <div className="overflow-hidden rounded-xl shadow-lg">
-    <Image
       src="/2.jpg"
       alt="Eco Filament 2"
       width={400}
@@ -52,6 +42,16 @@ Turning plastic waste into sustainable innovation
     <Image
       src="/3.jpg"
       alt="Eco Filament 3"
+      width={400}
+      height={300}
+      className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+      priority
+    />
+  </div>
+  <div className="overflow-hidden rounded-xl shadow-lg">
+    <Image
+      src="/1.jpg"
+      alt="Eco Filament 1"
       width={400}
       height={300}
       className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
