@@ -3,10 +3,6 @@ import Image from "next/image";
 export default function HomePage() {
 return (
   <main className="relative bg-white rounded-2xl shadow-2xl p-6 md:p-10 max-w-7xl w-full border border-gray-200">
-    {/* Decorative background blobs */}
-    <div className="absolute -top-10 -left-10 w-40 h-40 bg-green-200 rounded-full blur-3xl opacity-40" />
-      <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-200 rounded-full blur-3xl opacity-40" />
-
       {/* Content */}
       <div className="relative">
       {/* Logo + Header */}
