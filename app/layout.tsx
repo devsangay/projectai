@@ -9,15 +9,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="relative min-h-screen bg-fixed bg-center  bg-no-repeat overflow-auto px-4" style={{ backgroundImage: "url('/bg.jpg')" }}>
-        
-        {/* Optional dark overlay for readability */}
-        <div className="fixed inset-0 bg-black/25 z-0"></div>
-
-        {/* Decorative blobs */}
-        <div className="fixed -top-10 -left-10 w-40 h-40 bg-green-200 rounded-full blur-3xl opacity-40 z-0" />
-        <div className="fixed -bottom-10 -right-10 w-40 h-40 bg-blue-200 rounded-full blur-3xl opacity-40 z-0" />
-
+      <body className="relative min-h-screen bg-fixed bg-center bg-no-repeat overflow-auto xs:px-4" style={{ backgroundImage: "url('/bg.jpg')" }}>
         {/* Scrollable content */}
         <div className="relative z-10 w-full flex justify-center py-10">
           {children}
