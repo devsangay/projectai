@@ -5,19 +5,44 @@ return (
   <main className="relative bg-white rounded-2xl shadow-2xl p-6 md:p-10 max-w-7xl w-full border border-gray-200">
       {/* Content */}
       <div className="relative">
-      {/* Logo + Header */}
-      <div className="flex flex-col items-center text-center mb-10">
-        <Image
-          src="/logo.jpeg"
-          alt="Logo"
-          width={120}
-          height={120}
-          className="mb-4"
-          priority
-        />
-        <h1 className="text-3xl md:text-4xl font-extrabold text-green-700 tracking-tight">3D Printer Filament</h1>
+      {/* Logo + Header with side logos */}
+      <div className="flex flex-col items-center text-center mb-10 relative">
+        <div className="flex items-center justify-center space-x-6">
+          {/* Left smaller logo */}
+          <Image
+            src="/side-logo-1.jpeg"
+            alt="Left Logo"
+            width={70}  // smaller than center logo
+            height={70}
+            priority
+          />
+
+          {/* Center main logo */}
+          <Image
+            src="/logo.jpeg"
+            alt="Main Logo"
+            width={100}
+            height={100}
+            className=""
+            priority
+          />
+
+          {/* Right smaller logo */}
+          <Image
+            src="/side-logo-2.jpeg"
+            alt="Right Logo"
+            width={70} // smaller than center logo
+            height={70}
+            priority
+          />
+        </div>
+
+        {/* Header text */}
+        <h1 className="text-3xl md:text-4xl font-extrabold text-green-700 tracking-tight mt-4">
+          3D Printer Filament
+        </h1>
         <p className="text-gray-600 mt-2 text-sm md:text-base">
-        Turning plastic waste into sustainable innovation
+          Turning plastic waste into sustainable innovation
         </p>
       </div>
 
@@ -113,6 +138,71 @@ return (
             To achieve economic viability by offering competitively priced, environmentally friendly filament to 3D printing market.  
           </li>
         </ul>
+      </div>
+
+      {/* Project Phases */}
+      <div className="mb-10 border-l-4 border-green-600 bg-white rounded-xl p-6 shadow-sm mt-10">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-green-700">Project Phases</h2>
+
+        {/* Phase 1 */}
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold text-blue-700 mb-2">Phase 1: Prototype Development</h3>
+          <p className="text-gray-700 font-medium mb-1">Objective:</p>
+          <p className="text-gray-700 mb-2 leading-relaxed">
+            Develop a working prototype that can convert used plastic bottles (mainly PET) into usable 3D printer filament.
+          </p>
+          <p className="text-gray-700 font-medium mb-1">Key Activities:</p>
+          <ul className="list-disc list-inside text-gray-700 mb-2 space-y-1">
+            <li>Design and assemble the extrusion system (stripping, heater, extruder, spooler).</li>
+            <li>Test temperature control and filament diameter consistency.</li>
+            <li>Develop simple control software (Arduino-based system for automation).</li>
+            <li>Produce the first functional spool of filament from recycled bottles.</li>
+          </ul>
+          <p className="text-gray-700 font-medium mb-1">Outcome:</p>
+          <p className="text-gray-700 leading-relaxed">
+            A working prototype that demonstrates the technical feasibility of converting waste plastic into 3D printer filament.
+          </p>
+        </div>
+
+        {/* Phase 2 */}
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold text-blue-700 mb-2">Phase 2: Material and Color Diversification</h3>
+          <p className="text-gray-700 font-medium mb-1">Objective:</p>
+          <p className="text-gray-700 mb-2 leading-relaxed">
+            Experiment with different types of plastic bottles and produce filaments of various colors and properties.
+          </p>
+          <p className="text-gray-700 font-medium mb-1">Key Activities:</p>
+          <ul className="list-disc list-inside text-gray-700 mb-2 space-y-1">
+            <li>Collect and categorize different plastic bottle types (types and sizes).</li>
+            <li>Adjust extrusion parameters for each type (temperature, speed, cooling rate).</li>
+            <li>Introduce filtering and color-mixing methods to enhance filament quality.</li>
+            <li>Test print samples to analyze surface finish and mechanical strength.</li>
+          </ul>
+          <p className="text-gray-700 font-medium mb-1">Outcome:</p>
+          <p className="text-gray-700 leading-relaxed">
+            High-quality, multi-colored filament that meets user needs and broadens the potential market base.
+          </p>
+        </div>
+
+        {/* Phase 3 */}
+        <div>
+          <h3 className="text-xl font-semibold text-blue-700 mb-2">Phase 3: Business Scaling and Commercialization</h3>
+          <p className="text-gray-700 font-medium mb-1">Objective:</p>
+          <p className="text-gray-700 mb-2 leading-relaxed">
+            Transform the project into a sustainable, scalable business that supports local recycling and 3D printing industries.
+          </p>
+          <p className="text-gray-700 font-medium mb-1">Key Activities:</p>
+          <ul className="list-disc list-inside text-gray-700 mb-2 space-y-1">
+            <li>Develop a small-scale production unit and quality control system.</li>
+            <li>Establish partnerships with FabLabs, schools and colleges, private 3D printer business and local recycling centers.</li>
+            <li>Create a business model for filament sales and plastic bottle collection incentives.</li>
+            <li>Brand development, marketing, and community awareness campaigns.</li>
+          </ul>
+          <p className="text-gray-700 font-medium mb-1">Outcome:</p>
+          <p className="text-gray-700 leading-relaxed">
+            A fully operational social enterprise that turns plastic waste into eco-friendly 3D printer filament — promoting circular economy and innovation in Bhutan.
+          </p>
+        </div>
       </div>
 
       {/* Future Scope */}
